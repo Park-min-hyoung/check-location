@@ -1,11 +1,16 @@
 import React from "react";
-import App from "@/App.tsx";
+
+import { App } from "@/app/index.tsx";
 import ReactDOM from "react-dom/client";
 
-import "@/styles/index.css";
+import "@/index.css";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import { enableMocking } from "@/testing/mocks/index";
+
+enableMocking().then(() => {
+  ReactDOM.createRoot(document.getElementById("root")!).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+});

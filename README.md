@@ -22,6 +22,7 @@
 ## Features
 
 - ⚡ **[Vite](https://vitejs.dev/)** - Lightning fast frontend tooling
+
 - ⚛️ **[React 18](https://reactjs.org/)** - A JavaScript library for building user interfaces
 - 🎨 **[TailwindCSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapidly building custom designs
 - 📦 **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript that compiles to plain JavaScript
@@ -83,6 +84,7 @@ In the project directory, you can run:
 ## Switching Package Manager
 
 This template uses [pnpm](https://pnpm.io/) as the default package manager. If you want to use `npm` or `yarn`, you need to remove the `pnpm-lock.yaml` file and run `npm i` or `yarn` to generate the lock file for the respective package manager.
+sdfsdfsdf
 
 ## License
 

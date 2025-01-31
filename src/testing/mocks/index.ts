@@ -1,7 +1,7 @@
-import { MODE } from "@/config/envs";
+import { isDevelopment } from "@/config/envs";
 
 export const enableMocking = async () => {
-  if (MODE !== "development") return;
+  if (!isDevelopment) return;
 
   const { worker } = await import("./browser");
   return worker.start();

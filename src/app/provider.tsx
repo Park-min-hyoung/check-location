@@ -6,6 +6,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { HelmetProvider } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 
+import { isDevelopment } from "@/config/envs";
 // import { AuthLoader } from "@/lib/auth";
 import { queryConfig } from "@/lib/react-query";
 import { defaultToastifyOptions } from "@/lib/react-toastify";
@@ -32,7 +33,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
       <ErrorBoundary FallbackComponent={MainErrorFallback}>
         <HelmetProvider>
           <QueryClientProvider client={queryClient}>
-            {import.meta.env.DEV && <ReactQueryDevtools />}
+            {isDevelopment && <ReactQueryDevtools />}
             <ToastContainer {...defaultToastifyOptions} />
             {children}
           </QueryClientProvider>

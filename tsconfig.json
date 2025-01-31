@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // Types
-    "types": ["kakao.maps.d.ts", "@types/jest"],
+    "types": ["@types/jest"],
 
     "target": "ES2022",
     "useDefineForClassFields": true,

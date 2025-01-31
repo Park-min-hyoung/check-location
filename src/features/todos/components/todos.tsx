@@ -1,14 +1,15 @@
+import { Button } from "@/components/ui/button/button";
+import ToastifyButton from "@/components/ui/toastify/toastify";
+
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router";
 
 import { paths } from "@/config/paths";
-import { Button } from "@/components/ui/button/button";
-import ToastifyButton from "@/components/ui/toastify/toastify";
 import { getTodos } from "../api/todos";
 
 function Todos() {
   // Queries
-  const query = useQuery({ queryKey: ["todos"], queryFn: getTodos });
+  const { data } = useQuery({ queryKey: ["todos"], queryFn: getTodos });
   const navigate = useNavigate();
 
   const navigateToMap = () => {
@@ -27,9 +28,7 @@ function Todos() {
         사용)
       </div>
       <div className="mb-8">
-        <ul>
-          {query.data?.map((item) => <li key={item.id}>{item.title}</li>)}
-        </ul>
+        <ul>{data?.map((item) => <li key={item.id}>{item.title}</li>)}</ul>
       </div>
 
       <div className="text-3xl">Shadcn Button</div>

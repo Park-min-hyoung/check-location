@@ -5,6 +5,8 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "importOrder": [
+    "^@/components/(.*)$",
+    "",
     "^(react/(.*)$)|^(react$)",
     "",
     "<THIRD_PARTY_MODULES>",
@@ -15,7 +17,6 @@
     "^@/config/(.*)$",
     "^@/lib/(.*)$",
     "^@/hooks/?(.*)$",
-    "^@/components/(.*)$",
     "^@/styles/(.*)$",
     "^[./]"
   ],

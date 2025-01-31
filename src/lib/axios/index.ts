@@ -7,6 +7,7 @@ import type {
 import { Axios, AxiosError } from "axios";
 import { get, isArray } from "es-toolkit/compat";
 
+import { Nullable } from "@/types/common";
 import {
   ACCESS_TOKEN,
   ENDPOINT_URL,
@@ -15,8 +16,8 @@ import {
 import { generateQueryParams } from "@/lib/axios/utils";
 
 interface Interceptor<V> {
-  onFulfilled?: ((value: V) => V | Promise<V>) | null;
-  onRejected?: ((error: any) => any) | null;
+  onFulfilled?: Nullable<(value: V) => V | Promise<V>>;
+  onRejected?: Nullable<(error: any) => any>;
 }
 
 // Local Access Token 사용시
@@ -111,7 +112,7 @@ axios.interceptors.response.use(
 //
 const curringMethod =
   (method: Method) =>
-  ({
+  async ({
     timeout = MEDIUM_REQUEST_TIMEOUT,
     ...requestConfig
   }: Omit<AxiosRequestConfig, "method">) => {

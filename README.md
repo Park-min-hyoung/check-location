@@ -21,7 +21,7 @@
 
 ## Features
 
-- ⚡ **[Vite](https://vitejs.dev/)** - Lightning fast frontend tooling
+- ⚡ **[Vite](https://vitejs.dev/)** - Lightning fast frontend tooling update readMe
 
 - ⚛️ **[React 18](https://reactjs.org/)** - A JavaScript library for building user interfaces
 - 🎨 **[TailwindCSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapidly building custom designs

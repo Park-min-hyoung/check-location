@@ -23,7 +23,7 @@
 
 - ⚡ **[Vite](https://vitejs.dev/)** - Lightning fast frontend tooling update readMe
 
-- ⚛️ **[React 18](https://reactjs.org/)** - A JavaScript library for building user interfaces feature/park-1-1아 병합해야해 알겠지??? 123
+- ⚛️ **[React 18](https://reactjs.org/)** - A JavaScript library for building user interfaces feature/park-1-1아 병합해야해 알겠지??? 앗 2번째 commit 내용과 커밋 메시지를 수정해야겠어
 - 🎨 **[TailwindCSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapidly building custom designs
 - 📦 **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript that compiles to plain JavaScript
 - 📦 **[react-router-dom](https://reactrouter.com/)** - Declarative routing for React

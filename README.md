@@ -32,6 +32,8 @@
 - ✨ **[Prettier](https://prettier.io/)** - An opinionated code formatter
 - 📦 **[pnpm](https://pnpm.io/)** - Fast, disk space efficient package manager
 
+나는 필요한것만 올릴 생각이야
+
 ## Getting Started
 
 **Scaffold the project:**
